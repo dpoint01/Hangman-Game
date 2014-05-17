@@ -1,0 +1,20 @@
+#choose random number from bank
+    word_bank = array of words (every element is a word)
+    hidden_word = wordbank.sample
+#display progress of word
+    '_'  * hidden_word.length
+#show remaining guesses
+    remaining_guess = 8
+#Prompt user for guess
+    put 'guess a letter or the whole word'
+#player chooses character or word
+    #if guess.length == 1 (its a character)
+        #if correct add letter to hidden_word
+        #if false subtract from count (count--)
+        #display error for repeat guesses
+    # if guess.length > 1 (its a word)
+        #if guess == hidden_word "WINNER"
+        #if guess != hidden_word "LOSER"
+
+#if chances == 0
+    #puts "LOSER"
